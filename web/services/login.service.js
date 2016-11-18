@@ -5,12 +5,13 @@ app.factory('LoginService', ['$location', function($location){
 				console.log('Logged in Successfully.');
 				$location.path('/phone');
 			} else {
-				$location.path('/');
+				$location.path('/login');
 			}
 		},
 		logout : function() {
-			$location.path('/');
+			console.log('Logout successfully.')
+			$location.path('/login');
 		}
 	}
-
 }]);
+

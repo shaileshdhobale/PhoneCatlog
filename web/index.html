@@ -6,22 +6,29 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="./lib/app.css" />
-    <!-- Library -->
-    <link rel="stylesheet" href="./lib/custom-css.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./lib/custom-css.css" />    
+
     <script src="lib/angular/angular.min.js"></script>
     <script src="lib/angular/angular-route.js"></script>
-    
+    <!-- <script src="lib/angular/jquery-3.1.1.min.js"></script> -->
   </head>
   <body>
     <ng-view>
-    
     </ng-view>
+
     <!-- Route -->
-    <script src="app.module.js"></script>
+    <script src="app.config.routes.js"></script>
+
+    <!-- <script src="lib/bootstrap/js/bootstrap.min.js" ></script> -->
+    
     <!-- Services -->
     <script src="services/login.service.js"></script>
+    
     <!-- controllers -->
-    <script src="controllers/phoneList.Controller.js"></script>
+    <script src="controllers/phoneList.controller.js"></script>
+    <script src="controllers/phoneDetails.controller.js"></script>
     <script src="controllers/login.controller.js"></script>
+  
   </body>
 </html>
