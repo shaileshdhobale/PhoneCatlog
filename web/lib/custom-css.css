@@ -94,3 +94,10 @@
 .login-help{
   font-size: 12px;
 }
+
+.page-not-found{
+  background-color: #eeeeee;
+}
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }

@@ -1,4 +1,4 @@
-<div ng-contoller="PhoneDetailsController">
+<div ng-contoller="PhoneDetailsController" ng-show="isFound">
   <img ng-src="{{phone.images[0]}}" class="phone" />
 
   <h1>{{phone.name}}</h1>
@@ -111,4 +111,20 @@
       <dd>{{phone.additionalFeatures}}</dd>
     </li>
   </ul>
+</div>
+
+<div class="container" ng-show="isPageNotFound" class="page-not-found">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="error-template">
+                <h1>
+                    Oops!</h1>
+                <h2>
+                    404 Not Found</h2>
+                <div class="error-details">
+                    Sorry, an error has occured, Requested page not found!
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
